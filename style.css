@@ -1,9 +1,0 @@
-body { font-family: 'Segoe UI', sans-serif; background: #f5f9ff; margin: 0; direction: rtl; }
-nav { background: #003366; padding: 1em; text-align: center; }
-nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
-main { padding: 2em; }
-.chat-box { background: #eef; padding: 1em; margin: 1em 0; border-radius: 8px; }
-.message { background: #dde; padding: 0.5em; margin: 0.3em 0; border-radius: 5px; }
-.login-box { background: white; padding: 2em; margin: auto; max-width: 300px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-input, button { width: 100%; padding: 0.5em; margin-top: 1em; }
-.error { color: red; }
