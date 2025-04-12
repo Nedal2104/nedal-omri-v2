@@ -2,32 +2,16 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>כניסה - מערכת נידאל</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ברוך הבא למערכת של נידאל</title>
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
-<body>
-  <div class="overlay">
-    <div class="login-box">
-      <h2>ברוך הבא</h2>
-      <form onsubmit="return checkLogin()">
-        <input type="text" id="username" placeholder="שם משתמש" required />
-        <input type="password" id="password" placeholder="סיסמה" required />
-        <button type="submit">כניסה</button>
-      </form>
-      <p id="error" class="error"></p>
-    </div>
+<body onload="checkLogin()">
+  <div class="welcome">
+    <img src="assets/doctor.png" alt="רופא מלווה" />
+    <h1>ברוך הבא למערכת הרפואית של ד״ר נידאל</h1>
+    <p>המערכת כוללת יומן, תרופות, צ'אט עם צוות, פרופילים, חיפושי מחלות ועוד.</p>
   </div>
-  <script>
-    function checkLogin() {
-      const user = document.getElementById("username").value;
-      const pass = document.getElementById("password").value;
-      if (user === "admin" && pass === "1234") {
-        window.location.href = "dashboard.html";
-      } else {
-        document.getElementById("error").innerText = "שם משתמש או סיסמה שגויים";
-      }
-      return false;
-    }
-  </script>
 </body>
+<script src="scripts/main.js"></script>
 </html>
