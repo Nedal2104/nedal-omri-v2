@@ -1,39 +1,9 @@
-body {
-    margin: 0;
-    font-family: "Segoe UI", sans-serif;
-    background: linear-gradient(to right, #83a4d4, #b6fbff);
-    animation: fadeIn 2s;
-}
-.overlay {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.login-box {
-    background-color: white;
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
-input, button {
-    display: block;
-    width: 100%;
-    margin: 1em 0;
-    padding: 0.7em;
-    font-size: 1em;
-}
-.error {
-    color: red;
-}
-.main-content {
-    padding: 2em;
-    animation: slideUp 1s ease-out;
-}
-@keyframes fadeIn {
-    from { opacity: 0; } to { opacity: 1; }
-}
-@keyframes slideUp {
-    from { transform: translateY(100px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
+body { font-family: 'Segoe UI', sans-serif; background: #f5f9ff; margin: 0; direction: rtl; }
+nav { background: #003366; padding: 1em; text-align: center; }
+nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+main { padding: 2em; }
+.chat-box { background: #eef; padding: 1em; margin: 1em 0; border-radius: 8px; }
+.message { background: #dde; padding: 0.5em; margin: 0.3em 0; border-radius: 5px; }
+.login-box { background: white; padding: 2em; margin: auto; max-width: 300px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+input, button { width: 100%; padding: 0.5em; margin-top: 1em; }
+.error { color: red; }

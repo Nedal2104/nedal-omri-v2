@@ -1,44 +1,33 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ברוך הבא למערכת של נידאל</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>כניסה - מערכת נידאל</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="overlay">
-        <div class="login-box">
-            <h2>ברוך הבא</h2>
-            <form onsubmit="return checkLogin()">
-                <input type="text" id="username" placeholder="שם משתמש" required />
-                <input type="password" id="password" placeholder="סיסמה" required />
-                <button type="submit">כניסה</button>
-            </form>
-            <p id="error" class="error"></p>
-        </div>
+  <div class="overlay">
+    <div class="login-box">
+      <h2>ברוך הבא</h2>
+      <form onsubmit="return checkLogin()">
+        <input type="text" id="username" placeholder="שם משתמש" required />
+        <input type="password" id="password" placeholder="סיסמה" required />
+        <button type="submit">כניסה</button>
+      </form>
+      <p id="error" class="error"></p>
     </div>
-
-    <div class="main-content" style="display:none;">
-        <header>
-            <h1>שלום וברוך הבא למערכת של ד"ר נידאל</h1>
-            <p>האתר כולל מידע רפואי, קישורים, מנוע חיפוש ועוד</p>
-        </header>
-        <section class="search-area">
-            <input type="text" id="search" placeholder="חפש תרופה או מחלה...">
-            <button onclick="search()">חיפוש</button>
-            <div id="results"></div>
-        </section>
-        <section>
-            <h2>אתרים מומלצים</h2>
-            <ul>
-                <li><a href="https://www.clalit.co.il" target="_blank">שירותי בריאות כללית</a></li>
-                <li><a href="https://www.maccabi4u.co.il" target="_blank">מכבי שירותי בריאות</a></li>
-                <li><a href="https://www.mayoClinic.org" target="_blank">Mayo Clinic</a></li>
-            </ul>
-        </section>
-    </div>
-
-<script src="script.js"></script>
+  </div>
+  <script>
+    function checkLogin() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      if (user === "admin" && pass === "1234") {
+        window.location.href = "dashboard.html";
+      } else {
+        document.getElementById("error").innerText = "שם משתמש או סיסמה שגויים";
+      }
+      return false;
+    }
+  </script>
 </body>
 </html>
