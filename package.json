@@ -1,6 +1,5 @@
-
 {
-  "name": "nedal-omri-v2",
+  "name": "nedal-next-stage-2",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
