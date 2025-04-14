@@ -1,0 +1,1 @@
+export default function Medications() { return <h2>תרופות</h2>; }
