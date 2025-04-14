@@ -1,0 +1,18 @@
+body {
+  direction: rtl;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+  color: #333;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  margin: 5px 0;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
